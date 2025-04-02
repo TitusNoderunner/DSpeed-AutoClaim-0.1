@@ -1,18 +1,5 @@
 # DSpeed-AutoClaim-0.1
 
-// ==UserScript==
-// @name         Auto Claim DeSpeed
-// @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  Automatically clicks the daily button and reloads the page on app.despeed.net/dashboard
-// @author       Titus
-// @match        https://app.despeed.net/dashboard
-// @grant        none
-// ==/UserScript==
-
-(function() {
-    'use strict';
-
     function autoClickAndReload() {
         const button = document.querySelector('button.claimed-btn.cursor-not-allowed.d-flex.align-items-center.justify-content-center.gap-2');
         if (button && !button.classList.contains('cursor-not-allowed')) { // Check if the button exists and is enabled
@@ -28,7 +15,7 @@
 
     // Initial check in case the button is already enabled when the script loads
     autoClickAndReload();
-})();
+    })();
 
 
 To use this with Tampermonkey:
