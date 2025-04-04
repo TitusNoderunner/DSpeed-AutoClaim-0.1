@@ -13,7 +13,7 @@
     'use strict';
 
 function autoClickAndReload() {
-    const button = document.querySelector('button.claimed-btn.cursor-not-allowed.d-flex.align-items-center.justify-content-center.gap-2');
+    const button = document.querySelector('button.claim-btn');
     if (button && !button.classList.contains('cursor-not-allowed')) { // Check if the button exists and is enabled
         button.click();
         alert('Button clicked!'); // Added popup notification
